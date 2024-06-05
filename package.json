@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "A simple TODO app using HTMX and Express.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "npx nodemon"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,17 @@
   "bugs": {
     "url": "https://github.com/kizomanizo/htodomax/issues"
   },
-  "homepage": "https://github.com/kizomanizo/htodomax#readme"
+  "homepage": "https://github.com/kizomanizo/htodomax#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "htmx": "^0.0.2",
+    "mongoose": "^8.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
 }
